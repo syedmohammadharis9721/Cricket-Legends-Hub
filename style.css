@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #ec994b;
+  --white: #ffffff;
+  --bg: #f5f5f5;
+  --highlight-bg: rgba(236, 153, 75, 0.2);
+  --dark-bg: rgba(0, 0, 0, 0.1);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--bg);
+}
+
+.container {
+  max-width: 90rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  color: var(--primary);
+  padding: 1rem 0;
+  transition: transform 0.3s;
+}
+
+.section-heading:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #3cb371, #ffeb3b, #ff5722);
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#tranding {
+  padding: 1rem 0;
+  background: linear-gradient(to right, #2c3031, #08111b); /* Blue Gradient */
+}
+
+.tranding-slider {
+  height: 50rem;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.tranding-slide {
+  width: 32rem;
+  height: 45rem;
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.tranding-slide-img {
+  width: 100%;
+  height: 30rem;
+  overflow: hidden;
+}
+
+.tranding-slide-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.tranding-slide-content {
+  padding-top: 1rem;
+}
+
+.player-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary);
+  background: var(--highlight-bg);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.top-score,
+.notable-achievement {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--dark-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  margin: 0.5rem 0;
+}
+
+.player-achievement {
+  font-size: 1.6rem;
+  color: #333;
+  background: var(--highlight-bg);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Additional styles for slider controls and pagination */
+.tranding-slider-control .slider-arrow {
+  background: var(--white);
+  width: 3rem;
+  height: 3rem;
+}
+
+.tranding-slider-control .swiper-pagination {
+  position: relative;
+  width: 12rem;
+  bottom: 1rem;
+}
+
+/* Top Matches Section */
+#top-matches {
+  background-color: #f9f9f9;
+  padding: 2rem 0;
+  background: linear-gradient(to right, #2c3031, #08111b); /* Blue Gradient */
+}
+
+.match-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.match {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.match:hover {
+  transform: scale(1.05);
+}
+
+.match h3 {
+  font-size: 1.8rem;
+  color: #007BFF;
+  margin-bottom: 1rem;
+}
+
+.match p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.match iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/* Fan Zone Section */
+#fan-zone {
+  padding: 50px 0;
+  background: linear-gradient(to right, #6c4a8d, #b1b5ba); /* Blue Gradient */
+}
+
+.text-centerr {
+  background-color: black; /* Make the text background black */
+  color: wheat; /* Set text color */
+  width: 50%; /* Control the width of the container */
+  margin: 0 auto; /* Center horizontally */
+  text-align: center; /* Center the text inside the container */
+  padding: 10px; /* Add some padding */
+}
+
+
+.fan-zone-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.fan-zone-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.fan-zone-form input,
+.fan-zone-form textarea {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  transition: border 0.2s;
+}
+
+.fan-zone-form input:focus,
+.fan-zone-form textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.fan-zone-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.fan-zone-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Voting Section */
+.voting {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.voting h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.voting select {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+}
+
+.voting button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background 0.3s;
+}
+
+.voting button:hover {
+  background-color: #218838;
+}
+
+/* Introduction Styles */
+
+
+#intro h1 {
+  font-size: 2em;
+}
+
+
+.map-container {
+  height: 80vh;              /* 80% of the viewport height */
+  margin-left: auto;        /* Center the container */
+  margin-right: auto;       /* Center the container */
+  width: 80%;               /* Set the width to 80% of the parent container */
+  max-width: 1200px;       /* Optional: Set a max width for larger screens */
+}
+
+
+/* Header Section Styles */
+#mainHeader {
+  height: 90px;
+  
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-header::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, rgba(193, 119, 119, 0.1), rgba(255,255,255,0));
+  animation: animate-bg 6s linear infinite;
+}
+
+@keyframes animate-bg {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  100% { transform: translate(50%, 50%) rotate(360deg); }
+}
+
+.header-title {
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, #FFD700, #f7e9da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.header-title:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 40px;
+  }
+}
+
+
+/* Header Title and Tagline Styles */
+/* Animation for the header */
+#introduction {
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1519750155885-2815ab528c5e');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+}
+
+#introduction .intro-content {
+  background: rgba(0, 0, 0, 0.6); /* Dark background for readability */
+  display: inline-block;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+#introduction h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#introduction p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+#introduction em {
+  font-size: 20px;
+  color: #FFEB3B; /* Highlighted quote */
+}

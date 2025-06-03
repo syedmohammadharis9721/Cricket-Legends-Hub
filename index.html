@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fody Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Leaflet CSS for the map styling -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+</head>
+
+<body>
+
+
+    
+    <section id="tranding" class="animated-header">
+        <!-- <div class="container">
+         
+            <h1 class="text-center section-heading">Cricket Legends Hub</h1>
+        </div> -->
+        <!-- Header Section with Animation -->
+    <header id="mainHeader" class="animated-header">
+        <h1 class="header-title">Cricket Legends Hub</h1>
+    </header>
+
+    
+        <!-- Enhanced Introduction Section -->
+        <section id="introduction">
+            <div class="intro-content">
+                <h2>Welcome to the World of Cricket</h2>
+                <p><em>"Cricket is more than just a game; it’s a lifestyle that blends athleticism, strategy, and sportsmanship."</em></p>
+                <p>From its origins in England to the roaring stadiums of India and Australia, cricket has produced countless legends who inspire fans around the globe. Discover their stories, explore their hometowns, and delve into the legacy they’ve built on and off the pitch.</p>
+            </div>
+        </section>
+        
+        <div class="container">
+            <div class="swiper tranding-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="c:\Users\syedharis\Downloads\th.jpg" alt="Virat Kohli">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h2 class="player-name">Virat Kohli</h2>
+                            <h3 class="player-top-score">
+                                <span class="top-score">Top Score: 254*</span>
+                            </h3>
+                            <div class="achievement">
+                                <p class="notable-achievement">Fastest to 8,000, 9,000, 10,000 runs in ODIs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="image/sachin.jpg" alt="Sachin Tendulkar">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h2 class="player-name">Sachin Tendulkar</h2>
+                            <h3 class="player-top-score">
+                                <span class="top-score">Top Score: 248*</span>
+                            </h3>
+                            <div class="achievement">
+                                <p class="notable-achievement">Most runs in international cricket (34,357 runs)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="image/peakpx (5).jpg" alt="Ricky Ponting">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h2 class="player-name">Ricky Ponting</h2>
+                            <h3 class="player-top-score">
+                                <span class="top-score">Top Score: 257</span>
+                            </h3>
+                            <div class="achievement">
+                                <p class="notable-achievement">Most World Cup wins as captain (2)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="image/briyan.jpg" alt="Brian Lara">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h2 class="player-name">Brian Lara</h2>
+                            <h3 class="player-top-score">
+                                <span class="top-score">Top Score: 400*</span>
+                            </h3>
+                            <div class="achievement">
+                                <p class="notable-achievement">Highest individual score in Test cricket (400*)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="image/ab.jpg" alt="AB de Villiers">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h2 class="player-name">AB de Villiers</h2>
+                            <h3 class="player-top-score">
+                                <span class="top-score">Top Score: 176</span>
+                            </h3>
+                            <div class="achievement">
+                                <p class="notable-achievement"> Fastest century in ODI cricket (31 balls)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                </div>
+
+                <div class="tranding-slider-control">
+                    <div class="swiper-button-prev slider-arrow">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-button-next slider-arrow">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+                  <!-- for map -->
+     <!-- Section for main title and subtitle -->
+     <section id="intro">
+       
+       
+        <h1 class="text-center section-heading">Hometowns and countries of famous cricket players</h1>
+    </section>
+    
+    <!-- Container for the interactive map -->
+    <div id="map" class="map-container"></div>
+
+
+                <!-- for matches -->
+    <section id="top-matches">
+        <div class="container">
+            <h1 class="text-center section-heading">Top Matches</h1>
+            <div class="match-grid">
+                <div class="match">
+                    <h3>Match 1: India vs Australia</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rpPCjyVfQOo?si=AirIySHo42aXbxaa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Summary: A thrilling match where India chased down 350 runs.</p>
+                </div>
+                <div class="match">
+                    <h3>Match 2: Pakistan vs India</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ba14hDWgmMs?si=LJI5kbJreF6krUUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Summary: An intense rivalry that kept fans on the edge of their seats.</p>
+                </div>
+                <div class="match">
+                    <h3>Match 3: Australia vs England</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <p>Summary: A classic match that showcased great talent on both sides.</p>
+                </div>
+                <div class="match">
+                    <h3>Match 4: West Indies vs England</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MQSb1J9sodk?si=KJpXgtUWUkVvaVjP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Summary: A high-scoring encounter that thrilled cricket fans around the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <!-- New Section: Fan Zone -->
+    <section id="fan-zone">
+        <div class="container">
+            <h2 class="section-heading text-center">Fan Zone</h2>
+            <p class="text-centerr">Share your favorite player stories or vote for the greatest players of all time!</p>
+            <form class="fan-zone-form">
+                <label for="player-name">Your Favorite Player:</label>
+                <input type="text" id="player-name" name="player-name" required>
+                
+                <label for="player-story">Your Story:</label>
+                <textarea id="player-story" name="player-story" rows="4" required></textarea>
+                
+                <button type="submit">Submit Story</button>
+            </form>
+            <div class="voting">
+                <h3>Vote for the Greatest Player:</h3>
+                <select id="vote-select">
+                    <option value="virat-kohli">Virat Kohli</option>
+                    <option value="sachin-tendulkar">Sachin Tendulkar</option>
+                    <option value="ricky-ponting">Ricky Ponting</option>
+                    <option value="brian-lara">Brian Lara</option>
+                    <option value="ab-de-villiers">AB de Villiers</option>
+                </select>
+               <button type="button" onclick="submitVote()">Vote</button>
+  <p id="vote-message" style="display: none; color: green; font-weight: bold; margin-top: 10px;"></p>
+</div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- map -->
+      <!-- Include Leaflet JavaScript library -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+</body>
+
+</html>
